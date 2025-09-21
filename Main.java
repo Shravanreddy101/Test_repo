@@ -2,13 +2,7 @@
 
 class Hello_Test{
 
-    String name;
-
-    public Hello_Test(String name){
-        this.name = name;
-    }
-
-    public void test_method(){
+    public void test_method(String name){
         System.out.println("Hello " + name);
     }
 }
@@ -16,8 +10,7 @@ class Hello_Test{
 
 public class Main{
     public static void main(String[] args) {
-        Hello_Test test = new Hello_Test("Shravan");
-        test.test_method();
-        
+        Hello_Test test = new Hello_Test();
+        test.test_method("Shravan");
     }
 }
